@@ -6,8 +6,18 @@ export default defineNuxtConfig({
     '@nuxt/ui-pro',
     '@nuxt/content',
     '@vueuse/nuxt',
-    'nuxt-og-image'
+    'nuxt-og-image',
+    '@nuxt/fonts'
   ],
+  fonts: {
+     providers: {
+      // You can pass a new custom provider - see more in the providers documentation
+      // for what this file should look like
+      // custom: '~/providers/custom',
+      // Or you can disable a built-in provider
+      google: false,
+    }
+  },
 
   devtools: {
     enabled: true
@@ -42,4 +52,5 @@ export default defineNuxtConfig({
       }
     }
   }
+
 })
